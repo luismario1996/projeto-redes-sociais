@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testes de posicionamento</title>
+
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box; /* Adicione isso! */
+}
+
+
+body {background-color: rgba(128, 128, 128, 0.207);}
+h1  {text-align: center;
+color: rgba(0, 0, 0, 0.395);}
+ 
+ul {display: flex;
+background-color: blueviolet;
+flex-wrap: wrap;
+gap: 10px;
+margin-bottom: 10px;
+justify-content: center;
+}
+
+li {background-color:aquamarine ;
+padding: 10px;
+border-radius: 10px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    width: 90%; /* Centraliza e deixa margem nas laterais */
+    margin: auto;
+    background-color: blueviolet;
+    gap: 20px;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Permite quebrar linha se necessário */
+}
+
+/* Garante que imagens ou textos longos não estourem a div */
+div {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+ section {display: flex;
+        margin-bottom: 20px;
+gap: 40px;}
+
+
+
+
+.bloco1-filho {
+    padding: 15px;
+     max-width: 100vw;
+    max-height: 100vh;
+        margin-bottom: 20px;
+    text-align: justify;
+    border: 1px solid black;
+}
+
+.bloco2-filho {
+        margin-bottom: 20px;
+margin-bottom: 20px;
+
+
+padding: 15px;
+border: 1px solid black;
+     max-width: 100vw;
+    max-height: 100vh;
+    text-align: justify;
+}
+
+@media (max-width: 769px) {
+    main {
+        flex-direction: column;
+        padding: 10px; /* Garante espaço nas laterais */
+    }
+
+    section {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bloco1, .bloco2 {
+        width: 100%; /* Força as divs a ocuparem a largura disponível */
+    }
+}
+footer > p {text-align: center;}
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <header>
+    <h1>Posição de Divs</h1>
+        
+    </header>
+
+  
+   <nav id="navegacao">
+   <ul>
+
+    <li><a href="">CINEMA</a></li>
+    <li><a href="">CINEMA</a></li>
+    <li><a href="">CINEMA</a></li>
+    <li><a href="">CINEMA</a></li>
+    <li><a href="">CINEMA</a></li>
+    <li><a href="">CINEMA</a></li>
+    <li><a href="">CINEMA</a></li>
+    <li><a href="">CINEMA</a></li>
+    <li><a href="">CINEMA</a></li>
+    <li><a href="">CINEMA</a></li>
+    <li><a href="">CINEMA</a></li>
+    <li><a href="">CINEMA</a></li>
+    <li><a href="">CINEMA</a></li>
+           
+ 
+   </ul>
+
+   </nav>
+
+   
+    <main>
+<section>
+      <div class="bloco1">
+     <div class="bloco1-filho">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, soluta id aliquid quasi necessitatibus labore maxime aspernatur molestias reiciendis libero! Quasi quibusdam doloremque assumenda perferendis, officia dolorum quod nesciunt velit?</p>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis omnis ab iure vitae debitis officiis magni odit aperiam recusandae, corporis sint laboriosam dolor quod autem voluptatum neque, animi ut laborum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae hic ratione, officia voluptate doloremque illum, nihil perspiciatis consequuntur accusantium dolorem incidunt nam cupiditate, tenetur pariatur distinctio blanditiis provident vel quod.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, eaque minus. Vitae laborum aperiam suscipit natus dolorum voluptates! Nemo quae expedita tempore nam enim et laboriosam excepturi ex impedit libero?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, alias, minus temporibus aspernatur, consequuntur at corporis voluptatum sequi suscipit ad ullam inventore tempora? Veniam aperiam eum atque, id fugit enim.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit distinctio nam dolorem? Ullam sequi accusantium velit maxime, eos dolor perspiciatis perferendis ipsam non unde praesentium sed voluptatem. Quas, magnam.</p>
+     </div>
+
+      </div>
+    <div class="bloco2">
+ <div class="bloco2-filho">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio qui voluptatem fugiat nobis id placeat illo dolores vero suscipit commodi tenetur dolore iste accusantium quaerat, cumque vel dicta possimus vitae.</p>
+ </div>
+  <div class="bloco2-filho">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatum esse, suscipit facere corporis fugit. Mollitia deleniti fugit unde. Ea nobis nisi nesciunt vel unde veritatis commodi tenetur dolorem quo!</p>
+  </div>
+   <div class="bloco2-filho">
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias aliquid quis, amet neque totam laudantium explicabo modi error, fugiat voluptatibus obcaecati vel officia praesentium ut, similique quasi repellat ullam ipsam.</p>
+   </div>
+
+    </div>
+</section>
+
+    </main>
+
+
+
+    <main>
+<section>
+      <div class="bloco1">
+     <div class="bloco1-filho">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, soluta id aliquid quasi necessitatibus labore maxime aspernatur molestias reiciendis libero! Quasi quibusdam doloremque assumenda perferendis, officia dolorum quod nesciunt velit?</p>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis omnis ab iure vitae debitis officiis magni odit aperiam recusandae, corporis sint laboriosam dolor quod autem voluptatum neque, animi ut laborum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae hic ratione, officia voluptate doloremque illum, nihil perspiciatis consequuntur accusantium dolorem incidunt nam cupiditate, tenetur pariatur distinctio blanditiis provident vel quod.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, eaque minus. Vitae laborum aperiam suscipit natus dolorum voluptates! Nemo quae expedita tempore nam enim et laboriosam excepturi ex impedit libero?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, alias, minus temporibus aspernatur, consequuntur at corporis voluptatum sequi suscipit ad ullam inventore tempora? Veniam aperiam eum atque, id fugit enim.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit distinctio nam dolorem? Ullam sequi accusantium velit maxime, eos dolor perspiciatis perferendis ipsam non unde praesentium sed voluptatem. Quas, magnam.</p>
+     </div>
+
+      </div>
+    <div class="bloco2">
+ <div class="bloco2-filho">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio qui voluptatem fugiat nobis id placeat illo dolores vero suscipit commodi tenetur dolore iste accusantium quaerat, cumque vel dicta possimus vitae.</p>
+ </div>
+  <div class="bloco2-filho">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatum esse, suscipit facere corporis fugit. Mollitia deleniti fugit unde. Ea nobis nisi nesciunt vel unde veritatis commodi tenetur dolorem quo!</p>
+  </div>
+   <div class="bloco2-filho">
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias aliquid quis, amet neque totam laudantium explicabo modi error, fugiat voluptatibus obcaecati vel officia praesentium ut, similique quasi repellat ullam ipsam.</p>
+   </div>
+
+    </div>
+</section>
+
+    </main>
+
+
+
+        <main>
+<section>
+      <div class="bloco1">
+     <div class="bloco1-filho">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, soluta id aliquid quasi necessitatibus labore maxime aspernatur molestias reiciendis libero! Quasi quibusdam doloremque assumenda perferendis, officia dolorum quod nesciunt velit?</p>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis omnis ab iure vitae debitis officiis magni odit aperiam recusandae, corporis sint laboriosam dolor quod autem voluptatum neque, animi ut laborum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae hic ratione, officia voluptate doloremque illum, nihil perspiciatis consequuntur accusantium dolorem incidunt nam cupiditate, tenetur pariatur distinctio blanditiis provident vel quod.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, eaque minus. Vitae laborum aperiam suscipit natus dolorum voluptates! Nemo quae expedita tempore nam enim et laboriosam excepturi ex impedit libero?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, alias, minus temporibus aspernatur, consequuntur at corporis voluptatum sequi suscipit ad ullam inventore tempora? Veniam aperiam eum atque, id fugit enim.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit distinctio nam dolorem? Ullam sequi accusantium velit maxime, eos dolor perspiciatis perferendis ipsam non unde praesentium sed voluptatem. Quas, magnam.</p>
+     </div>
+
+      </div>
+    <div class="bloco2">
+ <div class="bloco2-filho">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio qui voluptatem fugiat nobis id placeat illo dolores vero suscipit commodi tenetur dolore iste accusantium quaerat, cumque vel dicta possimus vitae.</p>
+ </div>
+  <div class="bloco2-filho">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatum esse, suscipit facere corporis fugit. Mollitia deleniti fugit unde. Ea nobis nisi nesciunt vel unde veritatis commodi tenetur dolorem quo!</p>
+  </div>
+   <div class="bloco2-filho">
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias aliquid quis, amet neque totam laudantium explicabo modi error, fugiat voluptatibus obcaecati vel officia praesentium ut, similique quasi repellat ullam ipsam.</p>
+   </div>
+
+    </div>
+</section>
+
+
+    </main>
+    
+    <footer><p>desenvolvido por luis mario</p></footer>
+</body>
+</html>
