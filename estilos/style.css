@@ -17,6 +17,7 @@ background-attachment: fixed;}
 
 
 main {height: 100vh;
+    width: 100vw;
     position: relative;
 
 }
@@ -61,3 +62,6 @@ section#redes-sociais img {
         box-shadow: 5px 5px 10px  black;
         transition:transform 1s;
         border: 2px solid rgba(255, 255, 255, 0.623);}
+
+        ::-webkit-scrollbar {width: 0px;
+height: 0px;}
